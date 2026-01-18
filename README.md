@@ -1,38 +1,46 @@
-# Jogo-do-Galo
+# Jogo do Galo
 
-This repository contains a simple command-line implementation of the game Tic-Tac-Toe, known as *Jogo do Galo* in Portuguese. This project was developed as the final assignment for the Python Essentials 1 course.
+Este repositório contém uma implementação simples em linha de comandos do jogo do galo, conhecido como *Jogo do Galo* em português. Este projeto foi desenvolvido como trabalho final do curso Python Essentials 1.
 
-## Gameplay
+## Jogabilidade
 
-This is a single-player game where you compete against the computer.
+Este é um jogo para um jogador, onde se compete contra o computador.
 
-*   The game is played on a 3x3 grid.
-*   You play as 'O', and the computer plays as 'X'.
-*   The computer always makes the first move by placing an 'X' in the center square.
-*   Players take turns placing their marks in empty squares.
-*   The first player to align three of their marks horizontally, vertically, or diagonally wins.
-*   If all squares are filled and no one has won, the game results in a draw.
+* O jogo é jogado numa grelha 3x3.
 
-## How to Play
+* Joga-se como 'O' e o computador joga como 'X'.
+* O computador faz sempre o primeiro movimento, colocando um 'X' no quadrado central.
 
-1.  Ensure you have Python 3 installed on your system.
-2.  Clone or download this repository to your local machine.
-3.  Open a terminal or command prompt and navigate to the project directory.
-4.  Run the game with the following command:
+* Os jogadores revezam-se colocando as suas marcas em quadrados vazios.
 
-    ```sh
-    python Jogo.py
-    ```
-5.  The game board will be displayed. When it is your turn, enter a number from 1 to 9 corresponding to the square where you want to place your 'O'.
+* Ganha o primeiro jogador a alinhar três das suas marcas horizontalmente, verticalmente ou diagonalmente.
 
-## Code Overview
+* Se todos os quadrados estiverem preenchidos e ninguém tiver ganho, o jogo termina empatado.
 
-The entire game logic is contained within the `Jogo.py` script. Here is a breakdown of the main functions:
+## Como Jogar
 
-*   `display_board(board)`: Renders the current state of the 3x3 game board in the console.
-*   `enter_move(board)`: Handles the human player's turn. It prompts for input, validates that the chosen square is valid and unoccupied, and then updates the board with an 'O'.
-*   `make_list_of_free_fields(board)`: Scans the board and returns a list of all currently empty squares.
-*   `victory_for(board, sgn)`: Checks if the player with the given sign ('X' or 'O') has achieved a winning combination.
-*   `draw_move(board)`: Executes the computer's turn by randomly selecting one of the available free squares and placing an 'X' on it.
+1. Certifique-se de que tem o Python 3 instalado no seu sistema.
 
-The script initializes the board, sets the computer's first move in the center, and then enters a loop that alternates turns between the user and the computer until a win or draw condition is met.
+2.º Clone ou descarregue este repositório para a sua máquina local. 3.º Abra um terminal ou uma linha de comandos e navegue até ao diretório do projeto.
+4.º Execute o jogo com o seguinte comando:
+
+``sh
+
+python Jogo.py
+
+``sh
+5.º O tabuleiro do jogo será apresentado. Quando for a sua vez, introduza um número de 1 a 9 correspondente à casa onde pretende colocar o seu 'O'.
+
+## Visão Geral do Código
+
+Toda a lógica do jogo está contida no script `Jogo.py`. Aqui está uma descrição das principais funções:
+
+* `display_board(board)`: Apresenta o estado atual do tabuleiro 3x3 na consola.
+
+* `enter_move(board)`: Gere a vez do jogador humano. Solicita a entrada, valida se a casa escolhida é válida e está desocupada e, em seguida, atualiza o tabuleiro com um 'O'.
+
+* `make_list_of_free_fields(board)`: Analisa o tabuleiro e devolve uma lista de todas as casas actualmente vazias.
+* `victory_for(board, sgn)`: Verifica se o jogador com o sinal fornecido ('X' ou 'O') obteve uma combinação vencedora.
+* `draw_move(board)`: Executa a jogada do computador seleccionando aleatoriamente uma das casas livres disponíveis e colocando um 'X' na mesma.
+
+O script inicializa o tabuleiro, define a primeira jogada do computador no centro e, em seguida, entra num loop que alterna as jogadas entre o utilizador e o computador até que uma condição de vitória ou empate seja cumprida.
