@@ -24,11 +24,11 @@ Este é um jogo para um jogador, onde se compete contra o computador.
 2.º Clone ou descarregue este repositório para a sua máquina local. 3.º Abra um terminal ou uma linha de comandos e navegue até ao diretório do projeto.
 4.º Execute o jogo com o seguinte comando:
 
-``sh
+```
 
 python Jogo.py
 
-``sh
+```
 5.º O tabuleiro do jogo será apresentado. Quando for a sua vez, introduza um número de 1 a 9 correspondente à casa onde pretende colocar o seu 'O'.
 
 ## Visão Geral do Código
